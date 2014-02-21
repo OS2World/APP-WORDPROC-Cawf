@@ -1,0 +1,39 @@
+This archive contains sources and executables for cawf 4.10 for 32-bit OS/2 
+systems.  See the file 00readme for full details, credits, and license terms.
+
+
+QUICK INSTALLATION INSTRUCTIONS
+
+ - Place cawf.exe and bsfilt.exe somewhere on your PATH.
+
+ - Place the contents of cawflib\ into some directory and define the
+   environment variable CAWFLIB to point to that directory.  
+   e.g. in CONFIG.SYS:
+      SET CAWFLIB=c:\usr\local\cawf
+
+
+BUILD NOTES
+
+cawf was ported to OS/2 first by Kai Uwe Rommel and then Darrel Hankerson.  
+However, the last available build I could find was version 4.07 from 1993.
+
+Consequently, I built these binaries from the cawf 4.10 sources (which seem to 
+be the latest), dating from 1997.
+
+The source distribution includes makefiles OS/2 and DOS compilation using 
+Borland C (makefile.bcc), Microsoft C and EMX/GCC 0.8 (makefile.os2).
+
+I modified makefile.os2 slightly to work with more recent versions of GNU 
+make.  You can use it with EMX/GCC 0.9d or with Innotek GCC 3.22 (either the 
+'emx' or 'emxbnd' targets will work), depending on what gcc.exe is in your 
+PATH.
+
+I also added makefile.wcc for compiling with OpenWatcom C/C++, which is what I 
+used for these binaries.
+
+The source code itself is unchanged from the official distribution.  
+
+
+-- 
+Alex Taylor - http://www.cs-club.org/~alex 
+February 2006
